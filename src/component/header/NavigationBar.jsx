@@ -1,4 +1,4 @@
-import React, { useDebugValue, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   faClose,
   faShoppingCart,
@@ -9,7 +9,6 @@ import { Badge, Menu } from "@mui/material";
 import { Container, Nav, Navbar, Table } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import NavCart from "./NavCart";
 import { DLT } from "../../redux/action/action";
 
 function NavigationBar() {
