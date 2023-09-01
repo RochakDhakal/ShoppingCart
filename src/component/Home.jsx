@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { Button, Card } from "react-bootstrap";
-import { productData } from "./productDeatils";
+import  productData  from "./productDeatils.js";
 import "./style.css";
 import { useDispatch } from "react-redux";
 import { ADD } from "../redux/action/action";
 import NavigationBar from "./Header/NavigationBar";
 function Home() {
-  const [data, setData] = useState(productData);
   const dispatch = useDispatch();
   const send = (e) => {
     dispatch(ADD(e));
@@ -17,7 +16,7 @@ function Home() {
       <div className="container">
         <h2 className="text-center">Add Items</h2>
         <div className="row m-2">
-          {data.map((item, ind) => {
+          {productData.map((item, ind) => {
             return (
               <Card
                 style={{ width: "18rem" }}

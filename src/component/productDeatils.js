@@ -1,4 +1,4 @@
-export const productData = [
+  const productData = [
     {
       id: 1,
       title: "Samsung Galaxy S7",
@@ -35,3 +35,4 @@ export const productData = [
       quantity: 1,
     },
   ];
+  export default productData
