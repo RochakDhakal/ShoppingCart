@@ -5,6 +5,7 @@ import { Button, Card, ListGroup, Table } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { ADD, DLT, REMOVE } from "../redux/action/action";
 import { useNavigate } from "react-router";
+import NavigationBar from "./Header/NavigationBar";
 
 function Cart() {
   const [price, setPrice] = useState(0);
@@ -35,6 +36,7 @@ function Cart() {
 
   return (
     <div>
+      <NavigationBar/>
       <div className="d-flex flex-direction-column justify-content-evenly m-5">
         {getData?.map((item, ind) => {
           console.log(item.quantity);
