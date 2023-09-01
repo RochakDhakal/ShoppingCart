@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { Button, Card } from "react-bootstrap";
 import  productData  from "./productDeatils.js";
 import "./style.css";
 import { useDispatch } from "react-redux";
 import { ADD } from "../redux/action/action";
-import NavigationBar from "./Header/NavigationBar";
+import NavigationBar from "./header/NavigationBar.jsx";
 function Home() {
   const dispatch = useDispatch();
   const send = (e) => {

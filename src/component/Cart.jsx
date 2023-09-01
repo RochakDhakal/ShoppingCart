@@ -3,7 +3,7 @@ import { Button, Card, ListGroup } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { ADD, DLT, REMOVE } from "../redux/action/action";
 import { useNavigate } from "react-router";
-import NavigationBar from "./Header/NavigationBar";
+import NavigationBar from "./header/NavigationBar";
 
 function Cart() {
   const [price, setPrice] = useState(0);
