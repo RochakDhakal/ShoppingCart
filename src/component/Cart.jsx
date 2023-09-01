@@ -1,7 +1,5 @@
-import { faTrash } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
-import { Button, Card, ListGroup, Table } from "react-bootstrap";
+import { Button, Card, ListGroup } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { ADD, DLT, REMOVE } from "../redux/action/action";
 import { useNavigate } from "react-router";
